@@ -1,0 +1,269 @@
+<script>window._tpt_anti_helmet = true</script><script>window.__tpt_full_page = 1</script><script class='tpt_dynamic'>
+function dynamicAttach(itemId, containerId, override, autoRerunMode) {
+    if (!window.__tpt_everlasting_cache) {
+        window.__tpt_everlasting_cache = {};
+    }
+    if (!window.__tpt_everlasting_tickrate) {
+        window.__tpt_everlasting_tickrate = {};
+    }
+    var slt = '.spb-item.type_actual_statement.spb-item-id_' + itemId;
+    var targetElement = document.querySelector(slt);
+    var containerElement = document.querySelector('.' + containerId);
+    console.log(targetElement, containerElement);
+    if (containerElement && (containerElement.innerHTML).trim().length > 0) {
+           window.__tpt_everlasting_cache[slt] = containerElement.innerHTML;
+    }
+    if ((targetElement && (!targetElement.innerHTML.length || override)) && ((containerElement && (containerElement.innerHTML).trim() || window.__tpt_everlasting_cache[slt]))) {
+        console.log('Found container element');
+        console.log(itemId, containerId);    
+        if (containerElement && (containerElement.innerHTML).trim().length > 0) {
+            var tpt_rerun = containerElement.querySelectorAll('script.tpt_rerun, script.tpt_inject_script');
+            if (containerElement.childNodes) {
+                Array.from(containerElement.childNodes).forEach(function(node) {
+                    targetElement.append(node);
+                });
+            }
+            tpt_rerun.forEach(function(t) {
+                Function(t.innerText)()
+            });
+        } else if (window.__tpt_everlasting_cache[slt]) {
+            targetElement.innerHTML = window.__tpt_everlasting_cache[slt];
+            var tpt_rerun = targetElement.querySelectorAll('script.tpt_rerun, script.tpt_inject_script');
+            tpt_rerun.forEach(function(t) {
+                Function(t.innerText)()
+            });
+        } else if (targetElement && containerElement && targetElement.innerHTML.length) {
+            console.log('Already attached', slt);
+        }
+    } else {
+      if (!targetElement) {
+          window.__tpt_everlasting_tickrate[slt] = ( window.__tpt_everlasting_tickrate[slt] || 0 )+1;
+          if (window.__tpt_everlasting_tickrate[slt] < 5){
+              setTimeout(function () {
+                  dynamicAttach(itemId, containerId, override, true);
+              }, 1000);
+          }
+      }  
+    }
+    if(!autoRerunMode){
+       if (!window._tapita_ssr_ijt_obj) {
+        window._tapita_ssr_ijt_obj = {};
+        }
+        window._tapita_ssr_ijt_obj[slt] = function() {
+            return dynamicAttach(itemId, containerId, override)
+        }; 
+    }
+}
+
+</script>
+<script>window._issolate_tapita_hamburger = true;</script>
+
+        <style>
+                .type_actual_statement{width: 100%}
+        </style>
+        {% assign content = page.metafields.tapita["pgt-7486581"] %}
+        
+                <script>
+                    function tptmakeidprv(length) {
+                        var result           = "";
+                        var characters       = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                        var charactersLength = characters.length;
+                        for ( var i = 0; i < length; i++ ) {
+                            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                        }
+                        return result;
+                    }
+                    var tptPRBId = tptmakeidprv(50);
+                    function addTapitaTMF() {
+                        var tpPBCtn = document.getElementsByClassName("smpb-container");
+                        if (tpPBCtn.length && tpPBCtn[0] && tpPBCtn[0].parentElement &&
+                            tpPBCtn[0].parentElement.parentElement && !document.getElementById(tptPRBId)) {
+                            var tptTmt = document.createElement("div");
+                            tptTmt.onclick = function() { window.location.href = 'https://apps.shopify.com/tapita-page-builder?utm_source=customer_pages&utm_medium=referral&utm_campaign=trademark'; };
+                            tptTmt.setAttribute("id", tptPRBId);
+                            tptTmt.style.margin = "10px auto";
+                            tptTmt.style.display = "block";
+                            tptTmt.style.width = "200px";
+                            tptTmt.style.zIndex = 9999999; 
+                            tptTmt.style.position = "relative"; 
+                            var tptImg = document.createElement("img");
+                            tptImg.src = "data:image/png;base64,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";
+                            tptImg.style.height = "46px";
+                            tptImg.style.width = "200px";
+                            tptTmt.appendChild(tptImg);  
+
+                            var newcssTagStyle = "#" + tptPRBId + "{display: block !important;}";
+                            var styleTag = document.createElement("style");
+                            styleTag.type = "text/css";
+                            tpPBCtn[0].appendChild(styleTag);  
+                            styleTag.appendChild(document.createTextNode(newcssTagStyle));
+                            tpPBCtn[0].parentElement.appendChild(tptTmt);  
+                        } else {
+                            window.setTimeout(addTapitaTMF, 1000);
+                        }
+                    }
+                    addTapitaTMF();
+                </script>
+            
+        <div id="tapita-page-main-content" style="min-height: 100px; display: block">
+          <h1 class="tapita-placeholder" style="display:none;">
+            "", 1
+          </h1>
+        </div>
+
+        
+        <div class="rte">
+            <script>
+                try {
+                    var _tpt_insigna = "274766d9d5f1a73a1c278a5046171cf1";
+                    if(!globalThis._tpt_pbds){
+                        globalThis._tpt_pbds = [];
+                    }
+                }catch(e){
+                    console.warn(e);
+                }
+                var tapitacss = `#shopify-section-tapita-main-page, #shopify-section-tapita-main-home { min-height: 100vh; } .main.content { max-width: unset; } .spb-item-root {width: 100%;} h1.main-page-title.page-title {display: none;} .spb-item.type_text {overflow-y: hidden;} `;
+                var tapitahead = document.head || document.getElementsByTagName("head")[0];
+                var tapitastyle = document.createElement("style");
+
+                tapitastyle.type = "text/css";
+                if (tapitastyle.styleSheet){
+                    tapitastyle.styleSheet.cssText = tapitacss;
+                } else {
+                    tapitastyle.appendChild(document.createTextNode(tapitacss));
+                }
+                tapitastyle.class="tapita-custom-css";
+                 
+                var tapitajs = ``;
+                var tapitascript = document.createElement("script");
+                tapitascript.appendChild(document.createTextNode(tapitajs));
+                tapitascript.defer = true;
+                tapitascript.class="tapita-custom-css";
+
+                tapitahead.appendChild(tapitastyle);
+                tapitahead.appendChild(tapitascript);
+                {% if request.page_type == "product" %}
+                    var kulasop  = 9;
+                {% endif %}
+            </script>
+            
+            {{ 'tapita-cdn-assets-1.6.38.js' | asset_url | script_tag }}
+             
+            <script defer>
+                var tapita_counter = 0;
+                var possibleMainTargetQuery = [
+                    
+                    "#tapita-page-main-content",
+                    ".normal_main_content",
+                    "#MainContent",
+                    "shopify-section-tapita-main-page",
+                    "shopify-section-tapita-main-home",
+                    "main",
+                ];
+                {% if request.page_type == "product" %}
+                    var kulasop  = 2;
+                {% endif %}
+              
+                var currentMain = null;
+                for (const selector of possibleMainTargetQuery) {
+                    currentMain = document.querySelector(selector);
+                    if(currentMain){
+                        break;
+                    }
+                }
+                var injector = setInterval(function () {
+                    var idToRender = false;
+                    var mainTarget = null;
+                    for (const selector of possibleMainTargetQuery) {
+                        mainTarget = document.querySelector(selector);
+                        if(mainTarget){
+                            break;
+                        }
+                    }
+                    if(currentMain && currentMain.id !=="MainContent"){
+                        currentMain.id = "MainContentTapita";
+                        idToRender = "MainContentTapita";
+                    } else {
+                        idToRender = "MainContent";
+                    }
+                    
+                    if (!idToRender)
+                        return;
+                    {% if request.page_type == "product" %}
+                        var licobioga  = 97;
+                    {% endif %}
+                    tapita_counter += 1;
+                    if (globalThis.PageBuilderComponent) {
+                        var tapitaSections = document.querySelectorAll(".tapitaSection, .spb-customerhtml-serverrender");
+                        currentMain = null;
+                        function tptPBD(forcedRerender){
+                            var lemonadeConsumer = document.querySelector(`#${idToRender} .smpb-container`);
+                            if(lemonadeConsumer && lemonadeConsumer.innerHTML  && !forcedRerender){
+                                return;
+                            }
+                            PageBuilderComponent.renderForIdWithProps(idToRender, {
+                            endPoint: "https://tapita.io/pb/graphql/",
+                            mode: "shopify",
+                            lazyloadPlaceHolder: " ",
+                            formatMessage: globalThis._rms_translate,
+                            _translateParagraph: true,
+                            _translateSEO: true,
+                            _translatePlaceholder: true,
+                            callback: function() { try { if (globalThis.PageBuilderComponent && globalThis._tpt_pbds && (globalThis._tpt_pbds instanceof Array)) globalThis._tpt_pbds.forEach(t => t && t()); } catch (e) { } },
+                            pageData: {"url_path":"\/new_page","original_url_path":"\/new_page","type_id":0,"priority":10,"entity_id":35763,"name":"test 1","status":1,"masked_id":"26417RPJspnVR9IqbNB6Nlk291718892566","custom_css":null,"custom_js":"\n var link_hover = document.createElement('link');link_hover.rel = 'stylesheet';link_hover.href = 'https:\/\/tapita.io\/pb\/pub\/media\/hover.css';document.head.appendChild(link_hover);","keywords":null,"title":"test 1","desc":"","is_rtl":0,"storeview_visibility":"","publish_items":"[{\"entity_id\":3219,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":\\\"100%\\\",\\\"flexDirection\\\":\\\"colum\\\"}\",\"data\":\"{\\\"image\\\":\\\"https:\\\\\\\/\\\\\\\/tapita.io\\\\\\\/pb\\\\\\\/pub\\\\\\\/media\\\\\\\/spb\\\\\\\/usr\\\\\\\/1\\\\\\\/oti\\\\\\\/1623984551396\\\\\\\/kKlpTMZAOJ16239846060ab2b1a30900f3e6690b87a7dc5940ad.png\\\",\\\"openUrl\\\":\\\"#\\\"}\",\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"image\",\"visibility\":\"\",\"sort_order\":10,\"parent_id\":3218,\"storeview_visibility\":0},{\"entity_id\":3224,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"padding\\\":\\\"20px 15px\\\",\\\"width\\\":\\\"100%\\\"}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":10,\"parent_id\":3217,\"storeview_visibility\":0},{\"entity_id\":3185,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"colum\\\",\\\"width\\\":\\\"100%\\\",\\\"height\\\":\\\"300px\\\",\\\"heightPixel\\\":\\\"autopx\\\"}\",\"data\":\"{\\\"image\\\":\\\"https:\\\\\\\/\\\\\\\/tapita.io\\\\\\\/pb\\\\\\\/pub\\\\\\\/media\\\\\\\/spb\\\\\\\/usr\\\\\\\/1\\\\\\\/oti\\\\\\\/1639465919314\\\\\\\/7V8i9C49X41623983935eea75d92c074692f4cffdd9bf88d1813.png\\\",\\\"size\\\":\\\"100%\\\"}\",\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"image\",\"visibility\":\"\",\"sort_order\":10,\"parent_id\":3184,\"storeview_visibility\":0},{\"entity_id\":3225,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":\\\"100%\\\",\\\"flexDirection\\\":\\\"colum\\\"}\",\"data\":\"{\\\"image\\\":\\\"https:\\\\\\\/\\\\\\\/tapita.io\\\\\\\/pb\\\\\\\/pub\\\\\\\/media\\\\\\\/spb\\\\\\\/usr\\\\\\\/1\\\\\\\/oti\\\\\\\/1623984533523\\\\\\\/ImxbfKZRz01623984586051efb2df66fe4616a037dd026014998.png\\\",\\\"openUrl\\\":\\\"#\\\"}\",\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"image\",\"visibility\":\"\",\"sort_order\":10,\"parent_id\":3224,\"storeview_visibility\":0},{\"entity_id\":3222,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":\\\"100%\\\",\\\"flexDirection\\\":\\\"colum\\\"}\",\"data\":\"{\\\"image\\\":\\\"https:\\\\\\\/\\\\\\\/tapita.io\\\\\\\/pb\\\\\\\/pub\\\\\\\/media\\\\\\\/spb\\\\\\\/usr\\\\\\\/1\\\\\\\/oti\\\\\\\/1623984543253\\\\\\\/Toy6ilJOE41623984597f64655f2c0445f54778dc68a87139c7a.jpeg\\\",\\\"openUrl\\\":\\\"#\\\"}\",\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"image\",\"visibility\":\"\",\"sort_order\":10,\"parent_id\":3221,\"storeview_visibility\":0},{\"entity_id\":3183,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"textAlign\\\":\\\"left\\\",\\\"fontSize\\\":\\\"30px\\\",\\\"paddingTop\\\":3,\\\"marginTop\\\":50,\\\"paddingLeft\\\":15,\\\"backgroundColor\\\":\\\"#fff2ec\\\"}\",\"data\":null,\"name\":\"MEANINGFUL GIFTS FOR LOVED ONES\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"text\",\"visibility\":\"\",\"sort_order\":20,\"parent_id\":3181,\"storeview_visibility\":0},{\"entity_id\":3184,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"padding\\\":\\\"20px 15px\\\",\\\"width\\\":\\\"100%\\\"}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":20,\"parent_id\":3180,\"storeview_visibility\":0},{\"entity_id\":3221,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"padding\\\":\\\"20px 15px\\\",\\\"width\\\":\\\"100%\\\"}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":20,\"parent_id\":3217,\"storeview_visibility\":0},{\"entity_id\":3220,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"textAlign\\\":\\\"center\\\",\\\"fontWeight\\\":650}\",\"data\":\"{\\\"openUrl\\\":\\\"#\\\"}\",\"name\":\"Gift for your family\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"text\",\"visibility\":\"\",\"sort_order\":30,\"parent_id\":3218,\"storeview_visibility\":0},{\"entity_id\":3218,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"padding\\\":\\\"20px 15px\\\",\\\"width\\\":\\\"100%\\\"}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":30,\"parent_id\":3217,\"storeview_visibility\":0},{\"entity_id\":3226,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"textAlign\\\":\\\"center\\\",\\\"fontWeight\\\":650}\",\"data\":\"{\\\"openUrl\\\":\\\"#\\\"}\",\"name\":\"Gift for your partner\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"text\",\"visibility\":\"\",\"sort_order\":30,\"parent_id\":3224,\"storeview_visibility\":0},{\"entity_id\":3181,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"padding\\\":\\\"20px 15px\\\",\\\"width\\\":\\\"100%\\\",\\\"backgroundColor\\\":\\\"#fff2ec\\\",\\\"height\\\":\\\"NaNpx\\\",\\\"marginTop\\\":0}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":30,\"parent_id\":3180,\"storeview_visibility\":0},{\"entity_id\":3223,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"textAlign\\\":\\\"center\\\",\\\"fontWeight\\\":650}\",\"data\":\"{\\\"openUrl\\\":\\\"#\\\"}\",\"name\":\"Gift for your woman\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"text\",\"visibility\":\"\",\"sort_order\":30,\"parent_id\":3221,\"storeview_visibility\":0},{\"entity_id\":3187,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"textAlign\\\":\\\"left\\\",\\\"paddingLeft\\\":15,\\\"backgroundColor\\\":\\\"#fff2ec\\\"}\",\"data\":null,\"name\":\"We offer Valentine's Day designs for your loved ones, let us accompany. Share your gift on Instagrem with #Lusion jewelry hastag We will give a mysterious gift to customers with the most engagement.\",\"tag_id\":\"pbi_dVdlOFQxNjIzOTgxODM1MTAw_35100\",\"class_name\":\"\",\"type\":\"text\",\"visibility\":\"\",\"sort_order\":40,\"parent_id\":3181,\"storeview_visibility\":0},{\"entity_id\":3209,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"backgroundColor\\\":\\\"#D73B17\\\",\\\"color\\\":\\\"#ffffff\\\",\\\"border\\\":\\\"1px solid #979797\\\",\\\"borderRadius\\\":\\\"25px\\\",\\\"paddingTop\\\":\\\"10px\\\",\\\"paddingBottom\\\":\\\"10px\\\",\\\"paddingLeft\\\":20,\\\"paddingRight\\\":\\\"20px\\\",\\\"textAlign\\\":\\\"center\\\",\\\"marginTop\\\":\\\"15px\\\",\\\"marginBottom\\\":\\\"15px\\\",\\\"marginLeft\\\":15,\\\"marginRight\\\":15,\\\"cursor\\\":\\\"pointer\\\",\\\"display\\\":\\\"flex\\\",\\\"width\\\":\\\"150px\\\",\\\"alignItems\\\":\\\"center\\\",\\\"height\\\":\\\"NaNpx\\\",\\\"fontWeight\\\":650,\\\"padding\\\":\\\"6px 16px\\\",\\\"widthPixel\\\":145}\",\"data\":\"{\\\"icon_position\\\":\\\"left\\\"}\",\"name\":\"Shop collection\",\"tag_id\":\"pbi_YTdhNmgxNjIzOTgyNjU5OTg4_59988\",\"class_name\":\"\",\"type\":\"button\",\"visibility\":\"\",\"sort_order\":50,\"parent_id\":3181,\"storeview_visibility\":0},{\"entity_id\":3234,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"flexShrink\\\":1,\\\"paddingTop\\\":\\\"20px\\\",\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"justifyContent\\\":\\\"center\\\",\\\"width\\\":\\\"100%\\\",\\\"height\\\":\\\"500px\\\",\\\"heightPixel\\\":\\\"900px\\\",\\\"backgroundPositionX\\\":\\\"center\\\",\\\"backgroundImage\\\":\\\"url(https:\\\\\\\/\\\\\\\/cdn.shopify.com\\\\\\\/s\\\\\\\/files\\\\\\\/1\\\\\\\/0607\\\\\\\/6848\\\\\\\/5427\\\\\\\/t\\\\\\\/4\\\\\\\/assets\\\\\\\/1718892952marcus-loke-xXJ6utyoSw0-unsplash_jpg.jpeg?v=1718892958)\\\",\\\"fontFamily\\\":\\\"Comic Sans MS\\\"}\",\"data\":\"{\\\"openUrl\\\":\\\"#\\\",\\\"customProps\\\":\\\"{\\\\\\\"data-aos\\\\\\\":\\\\\\\"fade-up\\\\\\\"}\\\"}\",\"name\":\"Shop now\",\"tag_id\":\"pbi_NEs1NFcxNjIzOTg1MjYyNzAw_62700\",\"class_name\":\" hvr-sink\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":1750,\"parent_id\":0,\"storeview_visibility\":0},{\"entity_id\":3217,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"flexShrink\\\":1,\\\"paddingTop\\\":\\\"20px\\\",\\\"paddingBottom\\\":0,\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"justifyContent\\\":\\\"center\\\",\\\"display\\\":\\\"grid\\\",\\\"columnGap\\\":\\\"15px\\\",\\\"rowGap\\\":\\\"15px\\\",\\\"gridTemplateColumns\\\":\\\"1fr 1fr 1fr\\\",\\\"m_gridTemplateColumns\\\":\\\"1fr\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"t_maxWidth\\\":\\\"1024px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"width\\\":\\\"100%\\\",\\\"marginBottom\\\":0}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_TjE0OUcxNjIzOTg0NDU1Njc1_55675\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":2110,\"parent_id\":0,\"storeview_visibility\":0},{\"entity_id\":56,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"maxWidth\\\":\\\"200px\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":2170,\"parent_id\":0,\"storeview_visibility\":0},{\"entity_id\":3191,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"marginTop\\\":\\\"15px\\\",\\\"marginBottom\\\":0,\\\"width\\\":\\\"100%\\\",\\\"textAlign\\\":\\\"center\\\",\\\"fontSize\\\":\\\"22px\\\",\\\"fontWeight\\\":580,\\\"paddingBottom\\\":0}\",\"data\":\"{}\",\"name\":\"\\u2014 NEW ARRIVALS \\u2014\",\"tag_id\":\"pbi_OTExRGUxNjIzOTgyMTQ2OTY3_46967\",\"class_name\":\"\",\"type\":\"text\",\"visibility\":\"\",\"sort_order\":3980,\"parent_id\":0,\"storeview_visibility\":0},{\"entity_id\":3192,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"marginTop\\\":0,\\\"marginBottom\\\":\\\"15px\\\",\\\"width\\\":\\\"100%\\\",\\\"textAlign\\\":\\\"center\\\",\\\"fontSize\\\":\\\"14px\\\",\\\"fontWeight\\\":500,\\\"paddingTop\\\":0}\",\"data\":\"{}\",\"name\":\"Most exciting products that you don't want to miss\",\"tag_id\":\"pbi_TGhRanIxNjIzOTgyMTk5MzEw_99310\",\"class_name\":\"\",\"type\":\"text\",\"visibility\":\"\",\"sort_order\":4060,\"parent_id\":0,\"storeview_visibility\":0},{\"entity_id\":3170,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"flexWrap\\\":\\\"nowrap\\\",\\\"width\\\":\\\"100%\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"t_maxWidth\\\":\\\"1024px\\\",\\\"paddingTop\\\":30,\\\"paddingBottom\\\":\\\"62px\\\",\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"m_paddingTop\\\":\\\"15px\\\",\\\"m_paddingBottom\\\":\\\"15px\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_SkxqR2oxNjIzOTgxNTYyNjY2_62666\",\"class_name\":\"\",\"type\":\"product_scroll\",\"visibility\":\"\",\"sort_order\":4140,\"parent_id\":0,\"storeview_visibility\":0},{\"entity_id\":3180,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":\\\"20px\\\",\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"justifyContent\\\":\\\"center\\\",\\\"display\\\":\\\"grid\\\",\\\"columnGap\\\":\\\"15px\\\",\\\"rowGap\\\":\\\"15px\\\",\\\"gridTemplateColumns\\\":\\\"1fr 1fr\\\",\\\"m_gridTemplateColumns\\\":\\\"1fr\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"t_maxWidth\\\":\\\"1024px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_eXI0bWwxNjIzOTgxODEwNTE1_10515\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":4220,\"parent_id\":0,\"storeview_visibility\":0},{\"entity_id\":3193,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"marginTop\\\":\\\"15px\\\",\\\"marginBottom\\\":0,\\\"width\\\":\\\"100%\\\",\\\"textAlign\\\":\\\"center\\\",\\\"fontSize\\\":\\\"22px\\\",\\\"fontWeight\\\":580,\\\"paddingBottom\\\":0}\",\"data\":\"{}\",\"name\":\"\\u2014 HOT PRODUCTS \\u2014\",\"tag_id\":\"pbi_bDZKSzYxNjIzOTgyMjgyNjk2_82696\",\"class_name\":\"\",\"type\":\"text\",\"visibility\":\"\",\"sort_order\":4300,\"parent_id\":0,\"storeview_visibility\":0},{\"entity_id\":3194,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"marginTop\\\":0,\\\"marginBottom\\\":\\\"15px\\\",\\\"width\\\":\\\"100%\\\",\\\"textAlign\\\":\\\"center\\\",\\\"fontSize\\\":\\\"14px\\\",\\\"fontWeight\\\":500,\\\"paddingTop\\\":0}\",\"data\":\"{}\",\"name\":\"Most exciting products that you don't want to miss\",\"tag_id\":\"pbi_QWNjNDgxNjIzOTgyMzExODIw_11820\",\"class_name\":\"\",\"type\":\"text\",\"visibility\":\"\",\"sort_order\":4380,\"parent_id\":0,\"storeview_visibility\":0},{\"entity_id\":3190,\"page_id\":\"35763\",\"status\":1,\"styles\":\"{\\\"display\\\":\\\"grid\\\",\\\"columnGap\\\":\\\"15px\\\",\\\"rowGap\\\":\\\"15px\\\",\\\"gridTemplateColumns\\\":\\\"1fr 1fr 1fr 1fr\\\",\\\"m_gridTemplateColumns\\\":\\\"1fr 1fr\\\",\\\"width\\\":\\\"100%\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"t_maxWidth\\\":\\\"1024px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"paddingTop\\\":30,\\\"paddingBottom\\\":\\\"62px\\\",\\\"m_paddingTop\\\":\\\"15px\\\",\\\"m_paddingBottom\\\":\\\"15px\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_ZGd6cGExNjIzOTgyMTM2NDEz_36413\",\"class_name\":\"\",\"type\":\"product_grid\",\"visibility\":\"\",\"sort_order\":4460,\"parent_id\":0,\"storeview_visibility\":0}]","updated_at":"2024-06-20 14:19:17","image":"https:\/\/tapita.io\/pb\/pub\/media\/spb\/usr\/1\/11\/PBPAGEIMAGE.png"}
+                            });
+                        }
+                        globalThis._tpt_pbds.push(tptPBD);
+                        tptPBD();
+                        
+        function _tapita_ssr_cti(){window._tapita_ssr_ijt_obj && Object.values(window._tapita_ssr_ijt_obj||{}).forEach(function (t){t&&t()})};
+        _tapita_ssr_cti();
+        if(!globalThis._tpt_pbds){globalThis._tpt_pbds=[]};
+        globalThis._tpt_pbds.push(_tapita_ssr_cti);
+        window.addEventListener("resize", ()=>{_tapita_ssr_cti()});
+        ;
+                        var documentFragment = document.createDocumentFragment();
+                        tapitaSections.forEach(function(el){documentFragment.appendChild(el)});
+                        document.querySelector("#" + idToRender).appendChild(documentFragment);
+                        tapitaSections = null;
+                        clearInterval(injector);
+                        if (window.location && window.location.hash) {
+                            var tptHashFound = window.location.hash;
+                            tptHashFound = hash.replace("#", "");
+                            tptHashFound = document.getElementById(tptHashFound);
+                            if (tptHashFound) {
+                                tptHashFound.scrollIntoView();
+                            }
+                        }
+                    } else if (tapita_counter > 60) {
+                        clearInterval(injector);
+                    }
+                }, 100);
+            </script>
+        </div>
+
+        <div class="tel">
+        {% for field in content.value %}
+          {% if field.type == "product_grid" %}
+          {% render 'tapita-product-grid',
+                    product_target_ident: field.settings.product_target_ident,
+                    product_handle: field.settings.product-handle,
+                    product_handles: field.settings.product-handles,
+                    product_ident: field.settings.product_ident,
+                    product_title: field.settings.product-title,
+                    product_limit: field.settings.product-limit,
+                    evenlyHeight: field.settings.evenlyHeight
+          %}
+          {% elsif field.type == "product_scroll" %}
+          {% render 'tapita-product-list',
+                    product_target_ident: field.settings.product_target_ident,
+                    product_handle: field.settings.product-handle,
+                    product_handles: field.settings.product-handles,
+                    product_ident: field.settings.product_ident,
+                    product_title: field.settings.product-title,
+                    product_limit: field.settings.product-limit,
+          %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        

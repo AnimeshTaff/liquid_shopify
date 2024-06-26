@@ -1,0 +1,306 @@
+<script>window._tpt_anti_helmet = true</script>
+                                <div class='spb-customerhtml-serverrender spb-customerhtml-serverrender-267' style='display: none;'><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="contact[tags]" value="newsletter"></div>
+                                <script>
+                                var timmerTime = (window && window.screen && window.screen.width && window.screen.width < 1024) ? 1000: 300;
+                                    var timer_267_counter = 0;
+                                    var timer_267 = setInterval(function () {
+                                    try{
+                                        timer_267_counter++;
+                                        let target_c = document.querySelector('.spb-item.spb-item-id_267');
+                                        let self_c = document.getElementsByClassName('spb-customerhtml-serverrender-267');
+                                        if (target_c && !target_c.innerHTML) {
+                                            if(self_c.length > 0 ){
+                                                target_c.style.setProperty('display', 'block');
+                                                target_c.style.setProperty('overflow', 'clip');
+                                                self_c[0].style.setProperty('display', 'unset');
+                                                self_c[0].style.setProperty('opacity', '1');
+                                                window.tpb_srsappended_{{ident}}267 = self_c[0];
+                                                target_c.appendChild(self_c[0]);
+                                            } else if (window.tpb_srsappended_{{ident}}267) {
+                                                target_c.style.setProperty('display', 'block');
+                                                target_c.style.setProperty('overflow', 'clip');
+                                                window.tpb_srsappended_{{ident}}267.style.setProperty('display', 'unset');
+                                                target_c.appendChild(window.tpb_srsappended_{{ident}}267);
+                                            }
+                                        } else if (!target_c) {
+                                            if((self_c.length > 0) && (timer_267_counter > 1)){
+                                              //  self_c[0].style.setProperty('display', 'unset');
+                                            }
+                                        } else{
+                                            if((timer_267_counter > 2)){
+                                                for(var i=0;i<self_c.length;i++){
+                                                 var m = self_c.item(i);
+                                                 if(m && m.parentElement&& m.parentElement.classList && m.parentElement.classList.contains("spb-item")){
+                                                    m.style.setProperty('display', 'unset');
+                                                 }else{
+                                                    m.innerHTML = '';
+                                                    m.style.setProperty('display', 'none');
+                                                 }
+                                                }
+                                            }
+                                        }
+                                    } catch(e) {
+                                        console.warn(e);
+                                        clearInterval(timer_267);
+                                    }
+                                }, timmerTime);
+                                </script>
+                            
+        <style>
+                .type_actual_statement{width: 100%}
+        </style><script class='tpt_dynamic'>
+function dynamicAttach(itemId, containerId, override, autoRerunMode) {
+    if (!window.__tpt_everlasting_cache) {
+        window.__tpt_everlasting_cache = {};
+    }
+    if (!window.__tpt_everlasting_tickrate) {
+        window.__tpt_everlasting_tickrate = {};
+    }
+    var slt = '.spb-item.type_actual_statement.spb-item-id_' + itemId;
+    var targetElement = document.querySelector(slt);
+    var containerElement = document.querySelector('.' + containerId);
+    console.log(targetElement, containerElement);
+    if (containerElement && (containerElement.innerHTML).trim().length > 0) {
+           window.__tpt_everlasting_cache[slt] = containerElement.innerHTML;
+    }
+    if ((targetElement && (!targetElement.innerHTML.length || override)) && ((containerElement && (containerElement.innerHTML).trim() || window.__tpt_everlasting_cache[slt]))) {
+        console.log('Found container element');
+        console.log(itemId, containerId);    
+        if (containerElement && (containerElement.innerHTML).trim().length > 0) {
+            var tpt_rerun = containerElement.querySelectorAll('script.tpt_rerun, script.tpt_inject_script');
+            if (containerElement.childNodes) {
+                Array.from(containerElement.childNodes).forEach(function(node) {
+                    targetElement.append(node);
+                });
+            }
+            tpt_rerun.forEach(function(t) {
+                Function(t.innerText)()
+            });
+        } else if (window.__tpt_everlasting_cache[slt]) {
+            targetElement.innerHTML = window.__tpt_everlasting_cache[slt];
+            var tpt_rerun = targetElement.querySelectorAll('script.tpt_rerun, script.tpt_inject_script');
+            tpt_rerun.forEach(function(t) {
+                Function(t.innerText)()
+            });
+        } else if (targetElement && containerElement && targetElement.innerHTML.length) {
+            console.log('Already attached', slt);
+        }
+    } else {
+      if (!targetElement) {
+          window.__tpt_everlasting_tickrate[slt] = ( window.__tpt_everlasting_tickrate[slt] || 0 )+1;
+          if (window.__tpt_everlasting_tickrate[slt] < 5){
+              setTimeout(function () {
+                  dynamicAttach(itemId, containerId, override, true);
+              }, 1000);
+          }
+      }  
+    }
+    if(!autoRerunMode){
+       if (!window._tapita_ssr_ijt_obj) {
+        window._tapita_ssr_ijt_obj = {};
+        }
+        window._tapita_ssr_ijt_obj[slt] = function() {
+            return dynamicAttach(itemId, containerId, override)
+        }; 
+    }
+}
+
+</script>
+<script>window._issolate_tapita_hamburger = true;</script>
+
+        {% assign content = article.metafields.tapita["art-39f1eea"] %}
+        
+                <script>
+                    function tptmakeidprv(length) {
+                        var result           = "";
+                        var characters       = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                        var charactersLength = characters.length;
+                        for ( var i = 0; i < length; i++ ) {
+                            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                        }
+                        return result;
+                    }
+                    var tptPRBId = tptmakeidprv(50);
+                    function addTapitaTMF() {
+                        var tpPBCtn = document.getElementsByClassName("smpb-container");
+                        if (tpPBCtn.length && tpPBCtn[0] && tpPBCtn[0].parentElement &&
+                            tpPBCtn[0].parentElement.parentElement && !document.getElementById(tptPRBId)) {
+                            var tptTmt = document.createElement("div");
+                            tptTmt.onclick = function() { window.location.href = 'https://apps.shopify.com/tapita-page-builder?utm_source=customer_pages&utm_medium=referral&utm_campaign=trademark'; };
+                            tptTmt.setAttribute("id", tptPRBId);
+                            tptTmt.style.margin = "10px auto";
+                            tptTmt.style.display = "block";
+                            tptTmt.style.width = "200px";
+                            tptTmt.style.zIndex = 9999999; 
+                            tptTmt.style.position = "relative"; 
+                            var tptImg = document.createElement("img");
+                            tptImg.src = "data:image/png;base64,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";
+                            tptImg.style.height = "46px";
+                            tptImg.style.width = "200px";
+                            tptTmt.appendChild(tptImg);  
+
+                            var newcssTagStyle = "#" + tptPRBId + "{display: block !important;}";
+                            var styleTag = document.createElement("style");
+                            styleTag.type = "text/css";
+                            tpPBCtn[0].appendChild(styleTag);  
+                            styleTag.appendChild(document.createTextNode(newcssTagStyle));
+                            tpPBCtn[0].parentElement.appendChild(tptTmt);  
+                        } else {
+                            window.setTimeout(addTapitaTMF, 1000);
+                        }
+                    }
+                    addTapitaTMF();
+                </script>
+            
+        <div id="tapita-blog-main-content" style="min-height: 100px; display: block">
+          
+        </div>
+
+        <div class="rte">
+            <script>
+                {% if request.page_type == "article" %}
+                    var lenantSheep  = 1;
+                {% endif %}
+                try {
+                    var _tpt_insigna = "dee03202772723859155e1642f26b291";
+                    if(!globalThis._tpt_pbds){
+                        globalThis._tpt_pbds = [];
+                    }
+                } catch(e){
+                    console.warn(e);
+                }
+                var tapitacss = `#shopify-section-tapita-main-page, #shopify-section-tapita-main-home { min-height: 100vh; } .main.content { max-width: unset; } h1.main-page-title.page-title {display: none;} .spb-item.type_text {overflow-y: hidden;} `;
+                var tapitahead = document.head || document.getElementsByTagName("head")[0];
+                var tapitastyle = document.createElement("style");
+
+                tapitastyle.type = "text/css";
+                if (tapitastyle.styleSheet){
+                    tapitastyle.styleSheet.cssText = tapitacss;
+                } else {
+                    tapitastyle.appendChild(document.createTextNode(tapitacss));
+                }
+                 tapitastyle.class="tapita-custom-css";
+
+                 
+                var tapitajs = ``;
+                var tapitascript = document.createElement("script");
+                tapitascript.appendChild(document.createTextNode(tapitajs));
+                tapitascript.defer = true;
+
+                tapitahead.appendChild(tapitastyle);
+                tapitahead.appendChild(tapitascript);
+                
+                try {
+                    {% if request.page_type == "blog" %}
+                    var lenantSheep  = 2;
+                    {% endif %}
+                } catch (err) {
+                }
+            </script>
+            {{ 'tapita-cdn-assets-1.6.38.js' | asset_url | script_tag }}
+
+            <script defer>
+                    {% if request.page_type == "index" %}
+                    var zemmet  = 2;
+                    {% endif %}
+                var tapita_counter = 0;
+                var injector = setInterval(function () {
+                    var idToRender = false;
+                    if (document.getElementById("tapita-blog-main-content"))
+                        idToRender = "tapita-blog-main-content";
+                    else if (document.getElementById("MainContent"))
+                        idToRender = "MainContent";
+                    else if (document.getElementById("shopify-section-tapita-main-page"))
+                        idToRender = "shopify-section-tapita-main-page";
+                    else if (document.getElementById("shopify-section-tapita-main-home"))
+                        idToRender = "shopify-section-tapita-main-home";
+                    else {
+                        var currentMain = document.querySelector("main");
+                        if( currentMain){
+                            currentMain.id = "MainContent";
+                            idToRender = "MainContent";
+                        }
+                    }
+                    if (!idToRender)
+                        return;
+
+                    tapita_counter += 1;
+                    if (globalThis.PageBuilderComponent) {
+                        var tapitaSections = document.querySelectorAll(".tapitaSection, .spb-customerhtml-serverrender");
+                        {% unless article.template_suffix contains "tpt" %}idToRender+="m"{% endunless %}
+                        currentMain = null;
+                        function tptPBD(forcedRerender){
+                            var lemonadeConsumer = document.querySelector(`#${idToRender} .smpb-container`);
+                            if(lemonadeConsumer && lemonadeConsumer.innerHTML && !forcedRerender){
+                                return;
+                            }
+                            {% if request.page_type == "product" %}
+                                var kulasop  = 2;
+                            {% endif %}
+                            PageBuilderComponent.renderForIdWithProps(idToRender, {
+                                endPoint: "https://tapita.io/pb/graphql/",
+                                mode: "shopify",
+                                lazyloadPlaceHolder: " ",
+                                formatMessage: globalThis._rms_translate,
+                                _translateParagraph: true,
+                                _translateSEO: true,
+                                _translatePlaceholder: true,
+                                callback: function() { try { if (globalThis.PageBuilderComponent && globalThis._tpt_pbds && (globalThis._tpt_pbds instanceof Array)) globalThis._tpt_pbds.forEach(t => t && t()); } catch (e) { } },
+                                pageData: {"apply_to":"news","priority":10,"entity_id":18995,"name":"New Page","status":1,"masked_id":"26417FfaEtdvll6gbfuh0hTCX1718968288","custom_css":"#pbitm-id-173 {\nbackground-image: linear-gradient(0deg, rgba(0,0,0,0.36), rgba(0,0,0,0.36)), url(https:\/\/tapita.io\/pb\/pub\/media\/spb\/usr\/3422\/oti\/1673258215298\/imageupload3395153525e04015846054c4c07459f9.jpeg) !important;\n}\n.spb-item.type_paragraph img{}\n.spb-item.type_paragraph img{ width: 100% !important}","custom_js":"\n var link_hover = document.createElement('link');link_hover.rel = 'stylesheet';link_hover.href = 'https:\/\/tapita.io\/pb\/pub\/media\/hover.css';document.head.appendChild(link_hover);","keywords":null,"title":"Fashion Designer","desc":"Sorry, no valid data returned","is_rtl":0,"storeview_visibility":"","publish_items":"[{\"entity_id\":273,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"column\\\",\\\"widthPercent\\\":100,\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\"}\",\"data\":\"{\\\"image\\\":\\\"https:\\\\\\\/\\\\\\\/simicart.com\\\\\\\/media\\\\\\\/simicart\\\\\\\/pagebuilder\\\\\\\/dummy_image.svg\\\"}\",\"name\":\"\",\"tag_id\":\"pbi_azJuZ3kxNzE4OTcyODEzMjQ0_13244\",\"class_name\":\"\",\"type\":\"image\",\"visibility\":\"\",\"sort_order\":20,\"parent_id\":196,\"storeview_visibility\":\"\"},{\"entity_id\":268,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"display\\\":\\\"block\\\",\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":\\\"20px\\\",\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":0,\\\"paddingRight\\\":0,\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"center\\\",\\\"backgroundImage\\\":\\\"url(https:\\\\\\\/\\\\\\\/d3lks6njuyuuik.cloudfront.net\\\\\\\/pb\\\\\\\/pub\\\\\\\/media\\\\\\\/spb\\\\\\\/usr\\\\\\\/18\\\\\\\/oti\\\\\\\/1669879288222\\\\\\\/Shop.png)\\\",\\\"heightPixel\\\":588,\\\"backgroundPositionX\\\":\\\"right\\\",\\\"backgroundSize\\\":\\\"contain\\\",\\\"backgroundPositionY\\\":\\\"center\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"flexWrap\\\":\\\"wrap\\\",\\\"m_backgroundSize\\\":\\\"cover\\\",\\\"m_backgroundPositionX\\\":\\\"center\\\",\\\"m_paddingBottom\\\":0,\\\"m_paddingLeft\\\":15,\\\"m_paddingRight\\\":15,\\\"alignContent\\\":\\\"center\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_NzZBNXAxNzE4OTcyNzc3MjIy_77222\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":30,\"parent_id\":196,\"storeview_visibility\":\"\"},{\"entity_id\":257,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"display\\\":\\\"block\\\",\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":50,\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"center\\\",\\\"backgroundImage\\\":\\\"url(https:\\\\\\\/\\\\\\\/d3lks6njuyuuik.cloudfront.net\\\\\\\/pb\\\\\\\/pub\\\\\\\/media\\\\\\\/spb\\\\\\\/usr\\\\\\\/349\\\\\\\/oti\\\\\\\/1664871403451\\\\\\\/62ab42f014bf5bg.png)\\\",\\\"alignContent\\\":\\\"center\\\",\\\"flexWrap\\\":\\\"wrap\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_Rjg1M2sxNzE4OTcyNzI4MzA3_28307\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":40,\"parent_id\":256,\"storeview_visibility\":\"\"},{\"entity_id\":238,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"backgroundColor\\\":\\\"#f6f6f6\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\"}\",\"data\":\"{\\\"dropdownDefaultExpanded\\\":1,\\\"dropdownIcon\\\":\\\"triangle\\\"}\",\"name\":\"How To Become Designer\",\"tag_id\":\"pbi_cGtOOVcxNzE4OTY5MjcyODky_72892\",\"class_name\":\"\",\"type\":\"dropdown\",\"visibility\":\"\",\"sort_order\":50,\"parent_id\":237,\"storeview_visibility\":\"\"},{\"entity_id\":272,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"backgroundColor\\\":\\\"#2e3a3e\\\",\\\"color\\\":\\\"#ffffff\\\",\\\"border\\\":\\\"none\\\",\\\"borderRadius\\\":0,\\\"paddingTop\\\":15,\\\"paddingBottom\\\":15,\\\"paddingLeft\\\":50,\\\"paddingRight\\\":50,\\\"textAlign\\\":\\\"center\\\",\\\"marginTop\\\":\\\"15px\\\",\\\"marginBottom\\\":\\\"15px\\\",\\\"cursor\\\":\\\"pointer\\\",\\\"display\\\":\\\"flex\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\",\\\"fontFamily\\\":\\\"inherit\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"fontWeight\\\":700}\",\"data\":\"{\\\"icon_position\\\":\\\"left\\\"}\",\"name\":\"Shop Now\",\"tag_id\":\"pbi_RGVYSmoxNjY5OTYzNjA5ODcx_09871\",\"class_name\":\"\",\"type\":\"button\",\"visibility\":\"\",\"sort_order\":60,\"parent_id\":271,\"storeview_visibility\":\"0\"},{\"entity_id\":240,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"backgroundColor\\\":\\\"#f6f6f6\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\"}\",\"data\":\"{\\\"dropdownDefaultExpanded\\\":1,\\\"dropdownIcon\\\":\\\"triangle\\\"}\",\"name\":\"What We Should Learn\",\"tag_id\":\"pbi_Z3FnUFcxNzE4OTY5MzIzMTE2_23116\",\"class_name\":\"\",\"type\":\"dropdown\",\"visibility\":\"\",\"sort_order\":70,\"parent_id\":237,\"storeview_visibility\":\"\"},{\"entity_id\":266,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"backgroundColor\\\":\\\"#595959\\\",\\\"marginTop\\\":0,\\\"marginBottom\\\":0,\\\"color\\\":\\\"#ffffff\\\",\\\"paddingTop\\\":15,\\\"paddingBottom\\\":15,\\\"paddingLeft\\\":20,\\\"paddingRight\\\":20,\\\"border\\\":\\\"none\\\",\\\"fontFamily\\\":\\\"inherit\\\",\\\"heightPixel\\\":55,\\\"fontSize\\\":\\\"16px\\\",\\\"fontWeight\\\":700,\\\"lineHeight\\\":\\\"1.4em\\\",\\\"minWidth\\\":\\\"120px\\\",\\\"textAlign\\\":\\\"center\\\"}\",\"data\":\"{\\\"icon_position\\\":\\\"left\\\",\\\"button-type\\\":\\\"submit\\\"}\",\"name\":\"Subscribe\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"form_button\",\"visibility\":\"\",\"sort_order\":90,\"parent_id\":265,\"storeview_visibility\":\"0\"},{\"entity_id\":271,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":\\\"20px\\\",\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"right\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"t_maxWidth\\\":\\\"1024px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"alignItems\\\":\\\"center\\\",\\\"flexWrap\\\":\\\"wrap\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_aHltckIxNjY5OTYzNjA0MjI4_04228\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":120,\"parent_id\":268,\"storeview_visibility\":\"0\"},{\"entity_id\":264,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"border\\\":\\\"1px solid #595959\\\",\\\"paddingTop\\\":\\\"8px\\\",\\\"paddingBottom\\\":\\\"8px\\\",\\\"paddingLeft\\\":20,\\\"paddingRight\\\":\\\"10px\\\",\\\"cursor\\\":\\\"pointer\\\",\\\"display\\\":\\\"flex\\\",\\\"heightPixel\\\":55,\\\"widthPercent\\\":100,\\\"borderStyle\\\":\\\"none\\\",\\\"fontSize\\\":\\\"16px\\\",\\\"lineHeight\\\":\\\"20px\\\"}\",\"data\":\"{\\\"name\\\":\\\"contact[email]\\\",\\\"placeholder\\\":\\\"Enter your email\\\",\\\"isRequired\\\":true,\\\"inputType\\\":\\\"email\\\"}\",\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"text_input\",\"visibility\":\"\",\"sort_order\":130,\"parent_id\":263,\"storeview_visibility\":\"0\"},{\"entity_id\":242,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"backgroundColor\\\":\\\"#f6f6f6\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\"}\",\"data\":\"{\\\"dropdownDefaultExpanded\\\":1,\\\"dropdownIcon\\\":\\\"none\\\"}\",\"name\":\"What The Salary Things\",\"tag_id\":\"pbi_dzVGRUgxNzE4OTY5MzU0MzMy_54332\",\"class_name\":\"\",\"type\":\"dropdown\",\"visibility\":\"\",\"sort_order\":140,\"parent_id\":237,\"storeview_visibility\":\"\"},{\"entity_id\":262,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":5,\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"center\\\",\\\"display\\\":\\\"grid\\\",\\\"columnGap\\\":\\\"0px\\\",\\\"rowGap\\\":\\\"15px\\\",\\\"gridTemplateColumns\\\":\\\"3fr 1fr\\\",\\\"m_gridTemplateColumns\\\":\\\"1fr\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"t_maxWidth\\\":\\\"1024px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_R3ZaNVQxNjcwNTc5MzgzNjA4_83608\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":150,\"parent_id\":261,\"storeview_visibility\":\"0\"},{\"entity_id\":261,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"flexShrink\\\":1,\\\"paddingTop\\\":\\\"15px\\\",\\\"paddingBottom\\\":\\\"15px\\\",\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"justifyContent\\\":\\\"center\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"widthPercent\\\":100,\\\"maxWidth\\\":\\\"800px\\\"}\",\"data\":\"{\\\"form-submit-method\\\":\\\"POST\\\",\\\"form-submit-url\\\":\\\"\\\\\\\/contact\\\",\\\"form-submit-onSubmit\\\":\\\"window.Shopify.recaptchaV3.addToken(this, \\\\\\\"customer\\\\\\\"); return false;\\\"}\",\"name\":\"\",\"tag_id\":\"pbi_cGpKVGkxNjcwNTc5MTU4NzE3_58717\",\"class_name\":\"\",\"type\":\"form_group\",\"visibility\":\"\",\"sort_order\":170,\"parent_id\":260,\"storeview_visibility\":\"0\"},{\"entity_id\":215,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"column\\\",\\\"widthPercent\\\":100,\\\"heightPixel\\\":0,\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"maxHeight\\\":\\\"100%\\\",\\\"paddingTop\\\":0,\\\"paddingLeft\\\":0,\\\"paddingRight\\\":0,\\\"paddingBottom\\\":0}\",\"data\":\"{\\\"showSliderIndicator\\\":\\\"1\\\",\\\"showSliderNavBtn\\\":\\\"1\\\",\\\"sliderAutoSlide\\\":\\\"1\\\",\\\"sliderInfiniteLoop\\\":\\\"1\\\"}\",\"name\":\"\",\"tag_id\":\"pbi_U0dUQ2gxNzE4OTY4OTQ3NjYw_47660\",\"class_name\":\"full-height\",\"type\":\"slider\",\"visibility\":\"\",\"sort_order\":180,\"parent_id\":214,\"storeview_visibility\":\"\"},{\"entity_id\":258,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"fontFamily\\\":\\\"inherit\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"textAlign\\\":\\\"center\\\",\\\"color\\\":\\\"#ffffff\\\",\\\"fontWeight\\\":700,\\\"fontSize\\\":\\\"36px\\\",\\\"lineHeight\\\":\\\"48px\\\"}\",\"data\":\"{\\\"textTag\\\":\\\"h2\\\"}\",\"name\":\"Subscribe For News And Updates\",\"tag_id\":\"pbi_ajM4WUExNjcwNTc4OTkxODY1_91865\",\"class_name\":\"\",\"type\":\"text\",\"visibility\":\"\",\"sort_order\":190,\"parent_id\":257,\"storeview_visibility\":\"0\"},{\"entity_id\":259,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"fontFamily\\\":\\\"inherit\\\",\\\"maxWidth\\\":\\\"800px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"textAlign\\\":\\\"center\\\",\\\"color\\\":\\\"#ffffff\\\",\\\"fontSize\\\":\\\"16px\\\",\\\"lineHeight\\\":\\\"20px\\\"}\",\"data\":\"{\\\"textTag\\\":\\\"h6\\\"}\",\"name\":\"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\",\"tag_id\":\"pbi_bm1jblIxNjcwNTc5MDY0MjMw_64230\",\"class_name\":\"\",\"type\":\"text\",\"visibility\":\"\",\"sort_order\":210,\"parent_id\":257,\"storeview_visibility\":\"0\"},{\"entity_id\":239,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"backgroundColor\\\":\\\"#ffffff\\\",\\\"minHeight\\\":100}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":220,\"parent_id\":238,\"storeview_visibility\":\"\"},{\"entity_id\":260,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":5,\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"center\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_WTdZYjgxNjcwNTc5MTUyNTk4_52598\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":230,\"parent_id\":257,\"storeview_visibility\":\"0\"},{\"entity_id\":267,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100}\",\"data\":\"{\\\"htmlContent\\\":\\\"\\\"}\",\"name\":\"\",\"tag_id\":\"pbi_eVhtaXcxNjU4MzkwNDY2OTUw_66950\",\"class_name\":\"\",\"type\":\"custom_html\",\"visibility\":\"\",\"sort_order\":250,\"parent_id\":261,\"storeview_visibility\":\"0\"},{\"entity_id\":241,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"backgroundColor\\\":\\\"#ffffff\\\",\\\"minHeight\\\":100}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":260,\"parent_id\":240,\"storeview_visibility\":\"\"},{\"entity_id\":263,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"padding\\\":\\\"15px\\\",\\\"width\\\":\\\"100%\\\",\\\"minHeight\\\":100,\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\",\\\"flexWrap\\\":\\\"wrap\\\",\\\"flexDirection\\\":\\\"row\\\",\\\"paddingRight\\\":10}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":270,\"parent_id\":262,\"storeview_visibility\":\"0\"},{\"entity_id\":265,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"padding\\\":\\\"15px\\\",\\\"width\\\":\\\"100%\\\",\\\"minHeight\\\":100,\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"left\\\",\\\"flexWrap\\\":\\\"wrap\\\",\\\"flexDirection\\\":\\\"row\\\",\\\"paddingLeft\\\":10}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":290,\"parent_id\":262,\"storeview_visibility\":\"0\"},{\"entity_id\":243,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"backgroundColor\\\":\\\"#ffffff\\\",\\\"minHeight\\\":100}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":300,\"parent_id\":242,\"storeview_visibility\":\"\"},{\"entity_id\":197,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"fontFamily\\\":\\\"inherit\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"color\\\":\\\"#fff\\\"}\",\"data\":\"{\\\"textTag\\\":\\\"h5\\\"}\",\"name\":\"### The Dynamic World of Fashion MarketsFashion isn't just about trends and styles; it's a vibrant marketplace that reflects cultural shifts, consumer preferences, and economic influences. The fashion market, a bustling ecosystem where creativity meets commerce, plays a pivotal role in shaping global tastes and identities.#### Trends and Consumer BehaviorAt the heart of the fashion market are trends\\u2014ever-evolving expressions of style that capture the zeitgeist of the moment. From haute couture runways to street fashion, trends emerge from a complex interplay of cultural influences, celebrity endorsements, and societal movements. Understanding these trends is crucial for brands seeking to stay relevant and resonate with their target audience.Consumer behavior drives the fashion market in profound ways. Today's consumers are more informed and conscientious than ever before, demanding transparency, sustainability, and inclusivity from brands. This shift has prompted many fashion houses to embrace ethical practices, from sourcing materials responsibly to promoting diversity in their marketing campaigns.#### Globalization and Digital TransformationThe fashion market has undergone a seismic shift with globalization and digital transformation. Global supply chains enable brands to source materials and manufacture garments worldwide, catering to a diverse array of markets. Simultaneously, e-commerce platforms have democratized access to fashion, empowering consumers to shop anytime, anywhere.Social media platforms like Instagram and TikTok have become virtual runways where trends are born and brands connect directly with consumers. Influencers wield immense influence, shaping purchasing decisions and setting new standards for authenticity in brand communication.#### Sustainability and InnovationSustainability has emerged as a defining issue in the fashion market. Consumers are increasingly prioritizing eco-friendly practices, pushing brands to adopt circular fashion models, reduce waste, and minimize their carbon footprint. Innovations in material science, such as bio-based textiles and upcycled fabrics, are paving the way for a more sustainable future.Technological advancements continue to revolutionize the fashion market. Virtual reality (VR) and augmented reality (AR) are transforming the shopping experience, offering immersive ways for consumers to try on clothes and visualize outfits. Artificial intelligence (AI) is optimizing supply chains, predicting trends, and personalizing the shopping journey.#### ConclusionIn conclusion, the fashion market is a dynamic and multifaceted industry that thrives on innovation, creativity, and consumer engagement. As it continues to evolve, driven by trends, digitalization, and sustainability, the future promises exciting opportunities for brands to innovate and connect with a global audience.Whether you're a fashion enthusiast, a brand strategist, or simply curious about the latest trends, the fashion market offers a fascinating glimpse into the intersection of art, commerce, and culture. Stay tuned as this ever-evolving marketplace continues to shape our world and wardrobes alike.\",\"tag_id\":\"pbi_V3UyVTQxNzE4OTY4ODA3Mjk0_07294\",\"class_name\":\"\",\"type\":\"text\",\"visibility\":\"\",\"sort_order\":320,\"parent_id\":196,\"storeview_visibility\":\"\"},{\"entity_id\":225,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"backgroundColor\\\":\\\"#ffffff\\\",\\\"color\\\":\\\"#000\\\",\\\"border\\\":\\\"none\\\",\\\"borderRadius\\\":20,\\\"paddingTop\\\":\\\"10px\\\",\\\"paddingBottom\\\":\\\"10px\\\",\\\"paddingLeft\\\":\\\"20px\\\",\\\"paddingRight\\\":\\\"20px\\\",\\\"textAlign\\\":\\\"center\\\",\\\"marginTop\\\":\\\"15px\\\",\\\"marginBottom\\\":\\\"15px\\\",\\\"cursor\\\":\\\"pointer\\\",\\\"display\\\":\\\"flex\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\",\\\"fontFamily\\\":\\\"inherit\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"minWidth\\\":\\\"150px\\\",\\\"fontWeight\\\":700,\\\"hover_color\\\":\\\"#fff\\\",\\\"hover_backgroundColor\\\":\\\"#0d0d0d\\\"}\",\"data\":\"{\\\"icon_position\\\":\\\"left\\\"}\",\"name\":\"Shop Now\",\"tag_id\":\"pbi_eVluUXcxNjcwNTcxNzQ3MzI3_47327\",\"class_name\":\"hvr-wobble-horizontal\",\"type\":\"button\",\"visibility\":\"\",\"sort_order\":340,\"parent_id\":224,\"storeview_visibility\":\"0\"},{\"entity_id\":235,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"backgroundColor\\\":\\\"#ffffff\\\",\\\"color\\\":\\\"#000\\\",\\\"border\\\":\\\"none\\\",\\\"borderRadius\\\":20,\\\"paddingTop\\\":\\\"10px\\\",\\\"paddingBottom\\\":\\\"10px\\\",\\\"paddingLeft\\\":\\\"20px\\\",\\\"paddingRight\\\":\\\"20px\\\",\\\"textAlign\\\":\\\"center\\\",\\\"marginTop\\\":\\\"15px\\\",\\\"marginBottom\\\":\\\"15px\\\",\\\"cursor\\\":\\\"pointer\\\",\\\"display\\\":\\\"flex\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\",\\\"fontFamily\\\":\\\"inherit\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"minWidth\\\":\\\"150px\\\",\\\"fontWeight\\\":700}\",\"data\":\"{\\\"icon_position\\\":\\\"left\\\"}\",\"name\":\"Shop Now\",\"tag_id\":\"pbi_eVluUXcxNjcwNTcxNzQ3MzI3_47327\",\"class_name\":\"hvr-wobble-horizontal\",\"type\":\"button\",\"visibility\":\"\",\"sort_order\":380,\"parent_id\":234,\"storeview_visibility\":\"0\"},{\"entity_id\":222,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"lineHeight\\\":\\\"50px\\\",\\\"fontFamily\\\":\\\"inherit\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"paddingLeft\\\":0,\\\"borderColor\\\":\\\"#dedede\\\",\\\"borderBottomWidth\\\":\\\"1px\\\",\\\"borderWidth\\\":\\\"1px\\\",\\\"borderStyle\\\":\\\"solid\\\",\\\"borderLeftWidth\\\":\\\"0px\\\",\\\"borderTopWidth\\\":\\\"0px\\\",\\\"borderRightWidth\\\":\\\"0px\\\"}\",\"data\":\"{\\\"paragraphContent\\\":\\\"<p style=\\\\\\\"text-align:left;\\\\\\\">Be Ready<br><span style=\\\\\\\"color: rgb(255,255,255);font-size: 48px;\\\\\\\"><strong>Winter Collection<\\\\\\\/strong><\\\\\\\/span><br><span style=\\\\\\\"color: rgb(255,255,255);font-size: 60px;\\\\\\\"><strong>Denim Shirt<\\\\\\\/strong><\\\\\\\/span><\\\\\\\/p>\\\\n\\\"}\",\"name\":\"\",\"tag_id\":\"pbi_eFowZ0oxNjcwNTYxNDI1MTA5_25109\",\"class_name\":\"\",\"type\":\"paragraph\",\"visibility\":\"\",\"sort_order\":400,\"parent_id\":221,\"storeview_visibility\":\"0\"},{\"entity_id\":232,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"lineHeight\\\":\\\"50px\\\",\\\"fontFamily\\\":\\\"inherit\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"paddingLeft\\\":0,\\\"borderColor\\\":\\\"#dedede\\\",\\\"borderBottomWidth\\\":\\\"1px\\\",\\\"borderWidth\\\":\\\"1px\\\",\\\"borderStyle\\\":\\\"solid\\\",\\\"borderLeftWidth\\\":\\\"0px\\\",\\\"borderTopWidth\\\":\\\"0px\\\",\\\"borderRightWidth\\\":\\\"0px\\\"}\",\"data\":\"{\\\"paragraphContent\\\":\\\"<p style=\\\\\\\"text-align:left;\\\\\\\"><span style=\\\\\\\"color: #737173;font-size: 120px;\\\\\\\"><strong>01<br><\\\\\\\/strong><\\\\\\\/span><span style=\\\\\\\"color: #ffffff;font-size: 48px;\\\\\\\"><strong>Winter Collection<\\\\\\\/strong><\\\\\\\/span><span style=\\\\\\\"color: #ffffff;font-size: 36px;\\\\\\\"><strong><br><\\\\\\\/strong><\\\\\\\/span><span style=\\\\\\\"color: #ffffff;font-size: 60px;\\\\\\\"><strong>Denim Shirt<\\\\\\\/strong><\\\\\\\/span><\\\\\\\/p>\\\\n\\\"}\",\"name\":\"\",\"tag_id\":\"pbi_eFowZ0oxNjcwNTYxNDI1MTA5_25109\",\"class_name\":\"\",\"type\":\"paragraph\",\"visibility\":\"\",\"sort_order\":410,\"parent_id\":231,\"storeview_visibility\":\"0\"},{\"entity_id\":220,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"column\\\",\\\"widthPercent\\\":100,\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"objectFit\\\":\\\"contain\\\",\\\"objectPosition\\\":\\\"center top\\\"}\",\"data\":\"{\\\"image\\\":\\\"https:\\\\\\\/\\\\\\\/d3lks6njuyuuik.cloudfront.net\\\\\\\/pb\\\\\\\/pub\\\\\\\/media\\\\\\\/spb\\\\\\\/usr\\\\\\\/8242\\\\\\\/oti\\\\\\\/1670559981071\\\\\\\/fashionslider-slide1.webp\\\"}\",\"name\":\"\",\"tag_id\":\"pbi_T1ZiSDcxNjcwNTYwMzYxMDM5_61039\",\"class_name\":\"img-height\",\"type\":\"image\",\"visibility\":\"\",\"sort_order\":420,\"parent_id\":219,\"storeview_visibility\":\"0\"},{\"entity_id\":230,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"column\\\",\\\"widthPercent\\\":100,\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"objectFit\\\":\\\"contain\\\",\\\"objectPosition\\\":\\\"center top\\\"}\",\"data\":\"{\\\"image\\\":\\\"https:\\\\\\\/\\\\\\\/d3lks6njuyuuik.cloudfront.net\\\\\\\/pb\\\\\\\/pub\\\\\\\/media\\\\\\\/spb\\\\\\\/usr\\\\\\\/8242\\\\\\\/oti\\\\\\\/1670559981071\\\\\\\/fashionslider-slide1.webp\\\"}\",\"name\":\"\",\"tag_id\":\"pbi_T1ZiSDcxNjcwNTYwMzYxMDM5_61039\",\"class_name\":\"img-height\",\"type\":\"image\",\"visibility\":\"\",\"sort_order\":430,\"parent_id\":229,\"storeview_visibility\":\"0\"},{\"entity_id\":218,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":5,\\\"paddingBottom\\\":5,\\\"paddingLeft\\\":5,\\\"paddingRight\\\":5,\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"center\\\",\\\"display\\\":\\\"grid\\\",\\\"columnGap\\\":\\\"15px\\\",\\\"rowGap\\\":\\\"15px\\\",\\\"gridTemplateColumns\\\":\\\"1fr 1fr\\\",\\\"m_gridTemplateColumns\\\":\\\"1fr\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"t_maxWidth\\\":\\\"1024px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_WWQxUmgxNjcwNTYwMTY2ODM3_66837\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":440,\"parent_id\":217,\"storeview_visibility\":\"0\"},{\"entity_id\":228,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":5,\\\"paddingBottom\\\":5,\\\"paddingLeft\\\":5,\\\"paddingRight\\\":5,\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"center\\\",\\\"display\\\":\\\"grid\\\",\\\"columnGap\\\":\\\"15px\\\",\\\"rowGap\\\":\\\"15px\\\",\\\"gridTemplateColumns\\\":\\\"1fr 1fr\\\",\\\"m_gridTemplateColumns\\\":\\\"1fr\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"t_maxWidth\\\":\\\"1024px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_WWQxUmgxNjcwNTYwMTY2ODM3_66837\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":450,\"parent_id\":227,\"storeview_visibility\":\"0\"},{\"entity_id\":216,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"paddingTop\\\":5,\\\"paddingBottom\\\":5,\\\"display\\\":\\\"flex\\\",\\\"justifyContent\\\":\\\"right\\\",\\\"flexDirection\\\":\\\"row\\\",\\\"alignItems\\\":\\\"center\\\",\\\"flexWrap\\\":\\\"nowrap\\\",\\\"minHeight\\\":100,\\\"backgroundColor\\\":\\\"#7a8891\\\",\\\"m_paddingLeft\\\":5,\\\"m_paddingRight\\\":5}\",\"data\":null,\"name\":\"First Slide\",\"tag_id\":\"\",\"class_name\":\"full-height\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":460,\"parent_id\":215,\"storeview_visibility\":\"0\"},{\"entity_id\":226,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"paddingTop\\\":5,\\\"paddingBottom\\\":5,\\\"display\\\":\\\"flex\\\",\\\"justifyContent\\\":\\\"right\\\",\\\"flexDirection\\\":\\\"row\\\",\\\"alignItems\\\":\\\"center\\\",\\\"flexWrap\\\":\\\"nowrap\\\",\\\"minHeight\\\":100,\\\"backgroundColor\\\":\\\"#7a8891\\\"}\",\"data\":null,\"name\":\"First Slide copy\",\"tag_id\":\"pbi_bFhuTVYxNjcwNTcyMDYxOTk2_61996\",\"class_name\":\"full-height\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":480,\"parent_id\":215,\"storeview_visibility\":\"0\"},{\"entity_id\":217,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"paddingBottom\\\":15,\\\"backgroundColor\\\":\\\"#ffffff00\\\",\\\"paddingRight\\\":15,\\\"minHeight\\\":100,\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"maxWidth\\\":\\\"1280px\\\"}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":490,\"parent_id\":216,\"storeview_visibility\":\"0\"},{\"entity_id\":227,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"paddingBottom\\\":15,\\\"backgroundColor\\\":\\\"#ffffff00\\\",\\\"paddingRight\\\":15,\\\"minHeight\\\":100,\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"maxWidth\\\":\\\"1280px\\\"}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":500,\"parent_id\":226,\"storeview_visibility\":\"0\"},{\"entity_id\":219,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"padding\\\":\\\"15px\\\",\\\"width\\\":\\\"100%\\\",\\\"minHeight\\\":100,\\\"alignItems\\\":\\\"flex-start\\\",\\\"justifyContent\\\":\\\"center\\\",\\\"flexWrap\\\":\\\"wrap\\\",\\\"flexDirection\\\":\\\"row\\\"}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":510,\"parent_id\":218,\"storeview_visibility\":\"0\"},{\"entity_id\":221,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"padding\\\":\\\"15px\\\",\\\"width\\\":\\\"100%\\\",\\\"minHeight\\\":100,\\\"flexWrap\\\":\\\"wrap\\\",\\\"flexDirection\\\":\\\"row\\\",\\\"alignContent\\\":\\\"center\\\"}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":520,\"parent_id\":218,\"storeview_visibility\":\"0\"},{\"entity_id\":229,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"padding\\\":\\\"15px\\\",\\\"width\\\":\\\"100%\\\",\\\"minHeight\\\":100,\\\"alignItems\\\":\\\"flex-start\\\",\\\"justifyContent\\\":\\\"center\\\",\\\"flexWrap\\\":\\\"wrap\\\",\\\"flexDirection\\\":\\\"row\\\"}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":530,\"parent_id\":228,\"storeview_visibility\":\"0\"},{\"entity_id\":231,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"padding\\\":\\\"15px\\\",\\\"width\\\":\\\"100%\\\",\\\"minHeight\\\":100,\\\"flexWrap\\\":\\\"wrap\\\",\\\"flexDirection\\\":\\\"row\\\",\\\"alignContent\\\":\\\"center\\\"}\",\"data\":null,\"name\":\"\",\"tag_id\":\"\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":540,\"parent_id\":228,\"storeview_visibility\":\"0\"},{\"entity_id\":233,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"widthPercent\\\":100,\\\"lineHeight\\\":\\\"2em\\\",\\\"fontFamily\\\":\\\"inherit\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"paddingLeft\\\":0,\\\"paddingRight\\\":0}\",\"data\":\"{\\\"paragraphContent\\\":\\\"<p style=\\\\\\\"text-align:left;\\\\\\\"><span style=\\\\\\\"color: #eae7e7;font-size: 14px;\\\\\\\"><strong>\\\\\\\"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\\\\\\\"<\\\\\\\/strong><\\\\\\\/span><\\\\\\\/p>\\\\n\\\"}\",\"name\":\"\",\"tag_id\":\"pbi_THdxQU0xNjcwNTcxNDMyNDg0_32484\",\"class_name\":\"\",\"type\":\"paragraph\",\"visibility\":\"\",\"sort_order\":550,\"parent_id\":231,\"storeview_visibility\":\"0\"},{\"entity_id\":224,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":5,\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":0,\\\"paddingRight\\\":\\\"15px\\\",\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"center\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"alignItems\\\":\\\"center\\\",\\\"flexWrap\\\":\\\"wrap\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_VFIxZUQxNjcwNTcxNzQyNzg2_42786\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":560,\"parent_id\":221,\"storeview_visibility\":\"0\"},{\"entity_id\":234,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":5,\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":0,\\\"paddingRight\\\":\\\"15px\\\",\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"center\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"alignItems\\\":\\\"center\\\",\\\"flexWrap\\\":\\\"wrap\\\"}\",\"data\":\"{}\",\"name\":\"\",\"tag_id\":\"pbi_VFIxZUQxNjcwNTcxNzQyNzg2_42786\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":570,\"parent_id\":231,\"storeview_visibility\":\"0\"},{\"entity_id\":196,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"display\\\":\\\"block\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":\\\"20px\\\",\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"center\\\",\\\"maxWidth\\\":\\\"1280px\\\",\\\"t_maxWidth\\\":\\\"1024px\\\",\\\"marginLeft\\\":\\\"auto\\\",\\\"marginRight\\\":\\\"auto\\\",\\\"backgroundImage\\\":\\\"url(https:\\\\\\\/\\\\\\\/cdn.shopify.com\\\\\\\/s\\\\\\\/files\\\\\\\/1\\\\\\\/0607\\\\\\\/6848\\\\\\\/5427\\\\\\\/t\\\\\\\/4\\\\\\\/assets\\\\\\\/1718973220wp12663722-4k-coder-wallpapers.png?v=1718973220)\\\"}\",\"data\":\"{\\\"layoutMarker\\\":2}\",\"name\":\"\",\"tag_id\":\"pbi_TkFvOVMxNzE4OTY4NzkxNzA0_91704\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":580,\"parent_id\":0,\"storeview_visibility\":\"\"},{\"entity_id\":214,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"display\\\":\\\"block\\\",\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":\\\"20px\\\",\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"center\\\"}\",\"data\":\"{\\\"layoutMarker\\\":2,\\\"custom_title_name\\\":\\\"Partial Width\\\"}\",\"name\":\"\",\"tag_id\":\"pbi_Zkc0M20xNzE4OTY4OTM1MDQz_35043\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":590,\"parent_id\":0,\"storeview_visibility\":\"\"},{\"entity_id\":237,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"display\\\":\\\"block\\\",\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":\\\"20px\\\",\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"center\\\"}\",\"data\":\"{\\\"layoutMarker\\\":2}\",\"name\":\"\",\"tag_id\":\"pbi_ZmM0bXQxNzE4OTY5MjQ0MTM5_44139\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":600,\"parent_id\":0,\"storeview_visibility\":\"\"},{\"entity_id\":256,\"page_id\":\"18995\",\"status\":1,\"styles\":\"{\\\"display\\\":\\\"block\\\",\\\"flexDirection\\\":\\\"row\\\",\\\"widthPercent\\\":100,\\\"flexShrink\\\":1,\\\"paddingTop\\\":\\\"20px\\\",\\\"paddingBottom\\\":\\\"20px\\\",\\\"paddingLeft\\\":\\\"15px\\\",\\\"paddingRight\\\":\\\"15px\\\",\\\"minHeight\\\":100,\\\"justifyContent\\\":\\\"center\\\"}\",\"data\":\"{\\\"layoutMarker\\\":2}\",\"name\":\"\",\"tag_id\":\"pbi_dkU0Z0MxNzE4OTcyNzExNjA4_11608\",\"class_name\":\"\",\"type\":\"container\",\"visibility\":\"\",\"sort_order\":620,\"parent_id\":0,\"storeview_visibility\":\"\"}]","type_id":2,"url_path":"new-page","updated_at":"2024-06-21 12:35:32","published_at":"2024-06-21 11:11:28","image":"https:\/\/tapita.io\/pb\/pub\/media\/spb\/usr\/1\/5342\/PBPAGEIMAGE.png"}
+                            });
+                        }
+                        globalThis._tpt_pbds.push(tptPBD);
+                        tptPBD();
+                        
+        function _tapita_ssr_cti(){window._tapita_ssr_ijt_obj && Object.values(window._tapita_ssr_ijt_obj||{}).forEach(function (t){t&&t()})};
+        _tapita_ssr_cti();
+        if(!globalThis._tpt_pbds){globalThis._tpt_pbds=[]};
+        globalThis._tpt_pbds.push(_tapita_ssr_cti);
+        window.addEventListener("resize", ()=>{_tapita_ssr_cti()});
+        ;
+                        var documentFragment = document.createDocumentFragment();
+                        tapitaSections.forEach(function(el){documentFragment.appendChild(el)});
+                        document.querySelector("#" + idToRender).appendChild(documentFragment);
+                        tapitaSections = null;
+                        clearInterval(injector);
+                        if (window.location && window.location.hash) {
+                            var tptHashFound = window.location.hash;
+                            tptHashFound = hash.replace("#", "");
+                            tptHashFound = document.getElementById(tptHashFound);
+                            if (tptHashFound) {
+                                tptHashFound.scrollIntoView();
+                            }
+                        }
+                    } else if (tapita_counter > 60) {
+                        clearInterval(injector);
+                    }
+                }, 100);
+            </script>
+        </div>
+
+        <div class="tel">
+        {% for field in content.value %}
+          {% if field.type == "product_grid" %}
+          {% render 'tapita-product-grid',
+                    product_target_ident: field.settings.product_target_ident,
+                    product_handle: field.settings.product-handle,
+                    product_handles: field.settings.product-handles,
+                    product_ident: field.settings.product_ident,
+                    product_title: field.settings.product-title,
+                    product_limit: field.settings.product-limit,
+                    evenlyHeight: field.settings.evenlyHeight
+          %}
+          {% elsif field.type == "product_scroll" %}
+          {% render 'tapita-product-list',
+                    product_target_ident: field.settings.product_target_ident,
+                    product_handle: field.settings.product-handle,
+                    product_handles: field.settings.product-handles,
+                    product_ident: field.settings.product_ident,
+                    product_title: field.settings.product-title,
+                    product_limit: field.settings.product-limit,
+          %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {%- render "tapita-blog-comment" -%}
+        
